@@ -52,9 +52,6 @@ During development, emphasis was placed on custom styling, performance optimizat
 
 ![Elena Vance Homepage](./photo2.png)
 
-### Appointment & Mobile View
-
-![Elena Vance Mobile View](./photo1.jpg)
 
 ---
 
