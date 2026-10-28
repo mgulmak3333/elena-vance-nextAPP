@@ -50,12 +50,11 @@ During development, emphasis was placed on custom styling, performance optimizat
 
 ### Homepage
 
-![Elena Vance Homepage](./photo1.png)
 ![Elena Vance Homepage](./photo2.png)
 
 ### Appointment & Mobile View
 
-![Elena Vance Mobile View](./public/images/appointment-background)
+![Elena Vance Mobile View](.photo1.png)
 
 ---
 
