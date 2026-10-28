@@ -10,7 +10,7 @@ A modern, highly responsive, and executive-themed luxury law firm web applicatio
 
 The project focuses on delivering a sophisticated user experience with a bespoke wine-red luxury aesthetic, responsive glassmorphism UI elements, and high-performance interactive smooth scrolling. Built as a showcase for modern front-end engineering, every component is structured with precision, clean code principles, and scalable web architecture.
 
-🔗 **Live Demo:** https://elena-vance.vercel.app/
+🔗 **Live Demo:** https://elena-vance-seven.vercel.app
 
 ---
 
