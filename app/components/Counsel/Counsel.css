@@ -1,0 +1,153 @@
+.counsel{
+    width: 100%;
+    height: auto;
+    background: rgb(30, 0, 0) url('/images/worldmap.webp') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;  
+}
+
+.counsel-area h2{
+    color: white;
+    font-family: var(--font-playfair);
+    font-size: 2.5rem;
+}
+
+
+.counsel-area{
+    max-width: 900px;
+    padding-bottom: 10px;
+}
+
+.counsel-area p{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--font-playfair);
+    font-size: 1rem;
+}
+
+.counsel-area button{
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    color: rgb(30, 0, 0);
+    margin-top: 30px;
+    transition: 0.3s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.counsel-area button:hover{
+    box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+@media (min-width: 1440px) {
+    .counsel-area{
+        max-width: 1200px;
+    }
+    .counsel-area h2{
+        font-size: 2.8rem;
+    }
+    .counsel-area p{
+        font-size: 1.2rem;
+    }
+    .counsel-area button{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    .counsel-area h2{
+        font-size: 2.9rem;
+    }
+    .counsel-area p{
+        font-size: 1.4rem;
+    }
+    .counsel-area button{
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1900px) {
+    .counsel-area{
+        max-width: 1200px;
+    }
+    .counsel-area h2{
+        font-size: 3rem;
+    }
+    .counsel-area p{
+        font-size: 1.5rem;
+    }
+    .counsel-area button{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 1099px) {
+    .counsel-area{
+        max-width: 900px;
+    }
+    .counsel-area h2{
+        font-size: 2.3rem;
+    }
+    .counsel-area p{
+        font-size: 0.9rem;
+    }
+    .counsel-area button{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .counsel-area{
+        max-width: 900px;
+    }
+    .counsel-area h2{
+        font-size: 2rem;
+    }
+    .counsel-area p{
+        font-size: 0.8rem;
+    }
+    .counsel-area button{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .counsel{
+        padding: 80px 10px;
+    }
+    .counsel-area{
+        max-width: 900px;
+    }
+    .counsel-area h2{
+        font-size: 1.8rem;
+    }
+    .counsel-area p{
+        font-size: 0.7rem;
+    }
+    .counsel-area button{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 335px) {
+    .counsel-area{
+        max-width: 900px;
+    }
+    .counsel-area h2{
+        font-size: 1.8rem;
+    }
+    .counsel-area p{
+        font-size: 0.6rem;
+    }
+    .counsel-area button{
+        font-size: 0.6rem;
+    }
+}

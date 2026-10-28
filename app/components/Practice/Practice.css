@@ -1,0 +1,46 @@
+.practice-ar{
+    width: 100%;
+    height: auto;
+    background: var(--section-color);
+    padding: 0 50px;
+    padding-bottom: 150px;
+    gap: 50px;
+}
+
+
+
+@media (min-width: 1440px){
+  .practice-ar{
+        padding-bottom: 150px;
+    }
+}
+
+
+@media (max-width: 1099px){
+    .practice-ar{
+        padding: 0px 30px;
+        padding-bottom: 100px;
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+    .practice-ar{
+        padding: 0px 20px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 370px){
+    .practice-ar{
+        padding: 35px 15px;
+    }
+}
+
+.card-area{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 128, 0, 0);
+}

@@ -1,0 +1,502 @@
+/* --- Saf CSS Arka Plan ve Ana Kapsayıcı --- */
+.pure-main {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #2b050c 0%, #4a0d18 50%, #1a0207 100%);
+  color: #f5f5f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0.5rem 2rem 0.5rem; /* Mobilde dış kenar boşlukları daraltıldı */
+  font-family: var(--font-montserrat, sans-serif);
+  box-sizing: border-box;
+}
+
+/* Dekoratif Işımalar */
+.pure-glow-1 {
+  position: absolute;
+  top: 25%;
+  left: 2.5rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: rgba(127, 29, 29, 0.3);
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.pure-glow-2 {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: rgba(76, 5, 25, 0.4);
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+/* --- Glassmorphism Kart Yapısı --- */
+.pure-card {
+  position: relative;
+  width: 100%;
+  max-width: 64rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1rem; /* 320px cihazlar için güvenli iç boşluk */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  margin: auto;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .pure-card {
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+  }
+}
+
+/* --- Başlık Kısmı --- */
+.pure-header-box {
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto 1.5rem auto;
+}
+
+@media (min-width: 640px) {
+  .pure-header-box {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.pure-badge {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #f3e5c8;
+  font-weight: 600;
+  font-family: var(--font-montserrat, sans-serif);
+}
+
+@media (min-width: 640px) {
+  .pure-badge {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+  }
+}
+
+.pure-main-title {
+  font-size: 1.35rem; /* 320px ekranda taşmayı önlemek için küçültüldü */
+  font-family: var(--font-playfair, serif);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-top: 0.375rem;
+}
+
+@media (min-width: 640px) {
+  .pure-main-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* --- Başarılı Gönderim Ekranı --- */
+.pure-success-wrapper {
+  padding: 2rem 0.5rem;
+  text-align: center;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.pure-success-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgba(243, 229, 200, 0.2);
+  border: 1px solid #f3e5c8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  color: #f3e5c8;
+  font-size: 1.25rem;
+}
+
+.pure-success-heading {
+  font-size: 1.5rem;
+  font-family: var(--font-playfair, serif);
+  color: #f3e5c8;
+  margin-bottom: 0.75rem;
+}
+
+.pure-success-desc {
+  color: #d6d3d1;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.pure-text-bold {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.pure-text-gold {
+  color: #f3e5c8;
+  font-weight: 500;
+}
+
+/* --- Form Izgara Düzeni --- */
+.pure-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem; /* Dar ekranlar için boşluk optimize edildi */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .pure-form-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pure-form-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+/* --- Sol Kolon (Takvim & Saatler) --- */
+.pure-left-pane {
+  grid-column: span 5 / span 5;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.875rem;
+  padding: 0.875rem; /* 320px için iç boşluk daraltıldı */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .pure-left-pane {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .pure-left-pane {
+    grid-column: span 12 / span 12;
+  }
+}
+
+.pure-cal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.pure-cal-month {
+  font-family: var(--font-playfair, serif);
+  font-size: 1rem;
+  color: #f3e5c8;
+  letter-spacing: 0.025em;
+}
+
+@media (min-width: 640px) {
+  .pure-cal-month {
+    font-size: 1.125rem;
+  }
+}
+
+.pure-utc {
+  font-size: 0.65rem;
+  color: #a8a29e;
+  font-family: monospace;
+}
+
+.pure-week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.125rem;
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #a8a29e;
+  margin-bottom: 0.375rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .pure-week-grid {
+    font-size: 0.75rem;
+    gap: 0.25rem;
+  }
+}
+
+.pure-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.125rem;
+  text-align: center;
+  font-size: 0.7rem; /* 320px için gün sayıları küçültüldü */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .pure-days-grid {
+    font-size: 0.875rem;
+    gap: 0.25rem;
+  }
+}
+
+.pure-day-muted {
+  padding: 0.35rem 0;
+  color: #44403c;
+  cursor: not-allowed;
+}
+
+.pure-day-btn {
+  padding: 0.35rem 0;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  color: #e7e5e4;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.pure-day-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pure-day-btn.active {
+  background-color: #f3e5c8;
+  color: #2b050c;
+  font-weight: bold;
+  box-shadow: 0 4px 6px -1px rgba(120, 53, 15, 0.3);
+}
+
+/* Saatler Bölümü */
+.pure-time-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pure-input-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #d6d3d1;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.pure-time-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.375rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .pure-time-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+}
+
+.pure-time-btn {
+  padding: 0.4rem 0.5rem;
+  font-size: 0.7rem; /* 320px ekranda saatlerin taşması engellendi */
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #d6d3d1;
+  transition: all 0.2s ease;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.pure-time-btn:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pure-time-btn.active {
+  border-color: #f3e5c8;
+  background-color: rgba(243, 229, 200, 0.2);
+  color: #f3e5c8;
+  font-weight: 600;
+}
+
+/* Özet Kutusu */
+.pure-summary-box {
+  background-color: rgba(43, 5, 12, 0.6);
+  border: 1px solid rgba(120, 53, 15, 0.4);
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  color: #d6d3d1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 0.5rem;
+}
+
+.pure-summary-val {
+  font-weight: 600;
+  color: #f3e5c8;
+  text-align: right;
+}
+
+/* --- Sağ Kolon (Form Girdileri) --- */
+.pure-right-pane {
+  grid-column: span 7 / span 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1023px) {
+  .pure-right-pane {
+    grid-column: span 12 / span 12;
+  }
+}
+
+.pure-fields-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  width: 100%;
+}
+
+.pure-row-dual {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.875rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .pure-row-dual {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.pure-field-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pure-asterisk {
+  color: #fde68a;
+}
+
+.pure-text-input,
+.pure-select-box,
+.pure-textarea-box {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.625rem;
+  padding: 0.625rem 0.875rem; /* 320px ekranlar için padding optimize edildi */
+  font-size: 0.8125rem;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: var(--font-montserrat, sans-serif);
+  box-sizing: border-box;
+}
+
+.pure-text-input::placeholder,
+.pure-textarea-box::placeholder {
+  color: #78716c;
+}
+
+.pure-text-input:focus,
+.pure-select-box:focus,
+.pure-textarea-box:focus {
+  border-color: #f3e5c8;
+  box-shadow: 0 0 0 1px #f3e5c8;
+}
+
+.pure-select-box {
+  cursor: pointer;
+  text-overflow: ellipsis;
+}
+
+.pure-option-item {
+  background-color: #2b050c;
+  color: #ffffff;
+}
+
+.pure-textarea-box {
+  resize: none;
+}
+
+/* --- Gönder Butonu --- */
+.pure-btn-submit {
+  width: 100%;
+  margin-top: 0.5rem;
+  background: linear-gradient(to right, #f3e5c8, #e2cc9d);
+  color: #2b050c;
+  font-weight: 600;
+  padding: 0.875rem;
+  border-radius: 0.625rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+  font-family: var(--font-montserrat, sans-serif);
+  box-sizing: border-box;
+}
+
+.pure-btn-submit:hover {
+  filter: brightness(1.1);
+}
+
+.pure-btn-submit:active {
+  transform: scale(0.99);
+}

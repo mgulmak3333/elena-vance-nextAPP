@@ -1,0 +1,183 @@
+.card {
+  width: 370px;
+  background: #E5D7C6;
+  border-radius: 10px;
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px #4445;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.icon,
+.heading,
+.content {
+  position: relative;
+  z-index: 5;
+  transition: all 0.5s;
+}
+
+
+
+.heading {
+  font-size: 1.5rem;
+  
+  font-weight: 700;
+  font-family: var(--font-playfair);
+  margin-bottom: 20px;
+}
+
+.content{
+  font-family: var(--font-montserrat);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.number {
+  position: absolute;
+  top: -90px;
+  right: -85px;
+  padding: 80px 100px 30px 30px;
+  background: rgb(121, 0, 0);
+  border-radius: 100%;
+  z-index: 5;
+}
+
+.number .text {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+
+.card:hover {
+  scale: 1.02;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .number::after {
+  width: 900px;
+  height: 900px;
+}
+
+.card:hover .icon,
+.card:hover .heading,
+.card:hover .content {
+  fill: #f5f5f5;
+}
+
+
+
+
+
+@media (min-width: 1440px){
+  .heading{
+    font-size: 1.8rem;
+  }
+  .content{
+    font-size: 1.1rem;
+  }
+  .card{
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 1580px){
+  .heading{
+    font-size: 1.9rem;
+  }
+  .content{
+    font-size: 1.2rem;
+  }
+  .card{
+    width: 450px;
+  }
+}
+
+@media (min-width: 1700px){
+  .heading{
+    font-size: 2rem;
+  }
+  .content{
+    font-size: 1.3rem;
+  }
+  .card{
+    width: 480px;
+  }
+}
+
+
+@media (min-width: 1900px){
+  .heading{
+    font-size: 2.2rem;
+  }
+  .content{
+    font-size: 1.3rem;
+  }
+  .card{
+    width: 500px;
+  }
+}
+
+
+
+@media (max-width: 791px){
+  .card{
+    width: fit-content;
+  }
+}
+
+@media (max-width: 768px){
+  .heading{
+    font-size: 1.5rem;
+  }
+  .content{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 370px){
+    .heading{
+      font-size: 1.2rem;
+    }
+    .content{
+      font-size: 0.8rem;
+    }
+}
+
+
+@keyframes cardTopAnim{
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card1Active{
+  animation: cardTopAnim ease-in 0.3s forwards;
+}
+
+.card2Active{
+  animation: cardTopAnim ease-in 0.6s forwards;
+}
+
+.card3Active{
+  animation: cardTopAnim ease-in 0.9s forwards;
+}
+
+

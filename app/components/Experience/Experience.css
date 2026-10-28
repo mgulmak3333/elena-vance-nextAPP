@@ -1,0 +1,185 @@
+.experince{
+    width: 100%;
+    height: auto;
+    background: var(--section-color);
+    display: flex;
+    padding: 0 50px;
+    padding-bottom: 120px;
+    gap: 50px;
+}
+
+@media (max-width: 1099px){
+    .experince{
+        padding: 0px 30px;
+        padding-bottom: 100px;
+    }
+}
+
+.experince-list{    
+    width: 100%;
+    height: auto;
+    border-left: 2px solid rgb(214, 138, 138);
+    padding: 0 30px;
+}
+
+.experince-list ul li{
+    width: fit-content;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    opacity: 0;
+}
+
+@keyframes ListLeftAnim{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.exL1Active{ 
+    animation: ListLeftAnim 0.5s ease forwards;
+}
+
+.exL2Active{
+    animation: ListLeftAnim 0.8s ease forwards;
+}
+
+.exL3Active{
+    animation: ListLeftAnim 1.1s ease forwards;
+}
+
+
+.list-head span{
+    font-family: var(--font-cinzel);
+    font-size: 3.1rem;
+    color: white;
+}
+
+.list-area span{
+    font-size: 1.1rem;
+    font-family: var(--font-montserrat);
+    color: rgb(214, 138, 138);
+}
+
+.list-area p{
+    color: white;
+    font-family: var(--font-montserrat);
+    font-size: 1.1rem;
+}
+
+
+
+
+
+.list-area-head h3{
+    display: none;
+    font-size: 1.2rem;
+    font-family: var(--font-cinzel);
+    color: rgb(255, 194, 194);
+}
+
+
+
+
+@media (min-width: 1440px) {
+    .list-head span{
+        font-size: 3.5rem;
+    }
+    .list-area span{
+        font-size: 1.3rem;
+    }
+    .list-area p{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .list-head span{
+        font-size: 3.5rem;
+    }
+    .list-area span{
+        font-size: 1.2rem;
+    }
+    .list-area p{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media (min-width: 1580px) {
+    .list-head span{
+        font-size: 3.8rem;
+    }
+    .list-area span{
+        font-size: 1.4rem;
+    }
+    .list-area p{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (min-width: 1800px) {
+    .list-head span{
+        font-size: 4rem;
+    }
+    .list-area span{
+        font-size: 1.5rem;
+    }
+    .list-area p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px){
+    .experince{
+        padding: 0px 20px;
+        padding-bottom: 100px;
+    }
+    
+    .experince-list{
+        padding: 0 25px;
+    }
+    
+    .list-head span{
+        font-size: 2rem;
+    }
+    .list-area span{
+        font-size: 0.9rem;
+    }
+    .list-area p{
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 370px){
+    .experince{
+        padding: 80px 15px;
+    }
+    .experince-list{
+        padding: 0 8px;
+    }
+    .list-head span{
+        display: none;
+    }
+    .list-area-head h3{
+        display: block;
+    }
+    .list-area span{
+        font-size: 0.8rem;
+    }
+    .list-area p{
+        font-size: 0.7rem;
+    }
+}
+
+
+
