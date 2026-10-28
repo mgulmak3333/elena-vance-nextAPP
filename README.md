@@ -1,6 +1,3 @@
-Haklısın, doğrudan kopyalayıp yapıştırabilmen için tüm `README.md` içeriğini tek bir kod bloğu (code block) içinde veriyorum. Sağ üstteki **"Kopyala"** (Copy) butonuna basarak direkt dosyana aktarabilirsin:
-
-```markdown
 # Elena Vance | Executive & Luxury Legal Counsel
 
 A modern, highly responsive, and executive-themed luxury law firm web application prototype, built with Next.js, Tailwind CSS, Pure CSS, and Lenis smooth scrolling.
