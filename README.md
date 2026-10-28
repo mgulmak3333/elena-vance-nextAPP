@@ -127,6 +127,4 @@ This project was created to practice and demonstrate:
 
 This project is open-source and available for educational and portfolio presentation purposes.
 
-```
 
-```
