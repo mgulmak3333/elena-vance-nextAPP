@@ -28,7 +28,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <meta name="theme-color" content="#3A0101" />
 
         <link rel="preload" href="/images/bg.webp" as="image" type="image/webp" />
-        <link rel="preload" href="/images/appointment-background" as="image" type="image/webp" />
         <link rel="preload" href="/images/worldmap.webp" as="image" type="image/webp" /> 
 
 
