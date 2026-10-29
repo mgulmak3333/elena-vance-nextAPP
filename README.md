@@ -20,7 +20,6 @@ The project focuses on delivering a sophisticated user experience with a bespoke
 - **TypeScript** – Static typing for scalable, maintainable code
 - **Tailwind CSS & Pure CSS** – Custom utility styling combined with bespoke CSS architecture
 - **Lenis** – Advanced inertial smooth scrolling for seamless UX
-- **Lucide / React Icons** – Modern UI icons
 
 ---
 
