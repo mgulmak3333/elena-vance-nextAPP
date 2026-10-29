@@ -135,24 +135,24 @@ footer{
         font-size: 15rem;
     }
     .footer-links a{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .footer-links p{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .contact-head span{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .contact-mail a{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .contact-head p{
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .footer-bottom{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
