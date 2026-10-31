@@ -166,8 +166,8 @@
     }
     
     .about-profile img{
-        width: 480px;
-        height: 480px;
+        width: 450px;
+        height: 450px;
     }
 }
 
@@ -184,8 +184,8 @@
     }
     
     .about-profile img{
-        width: 500px;
-        height: 500px;
+        width: 470px;
+        height: 470px;
     }
 }
 
@@ -198,12 +198,12 @@
         max-width: 880px;
     }
     .paragraph p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .about-profile img{
-        width: 530px;
-        height: 530px;
+        width: 490px;
+        height: 490px;
     }
 }
 
@@ -216,12 +216,12 @@
         max-width: 950px;
     }
     .paragraph p{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .about-profile img{
-        width: 550px;
-        height: 550px;
+        width: 500px;
+        height: 500px;
     }
 }
 

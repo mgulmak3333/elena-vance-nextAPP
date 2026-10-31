@@ -132,23 +132,7 @@ footer{
 
 @media (min-width: 1900px) {
     .foot-elena{
-        font-size: 15rem;
-    }
-    .footer-links a{
-        font-size: 1.4rem;
-    }
-    .footer-links p{
-        font-size: 1.4rem;
-    }
-
-    .contact-head span{
-        font-size: 1.4rem;
-    }
-    .contact-mail a{
-        font-size: 1.4rem;
-    }
-    .contact-head p{
-        font-size: 3rem;
+        font-size: 13.5rem;
     }
 
     .footer-bottom{

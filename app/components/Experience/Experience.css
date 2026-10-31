@@ -117,23 +117,23 @@
         font-size: 3.8rem;
     }
     .list-area span{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .list-area p{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
 
 @media (min-width: 1800px) {
     .list-head span{
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
     .list-area span{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .list-area p{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 

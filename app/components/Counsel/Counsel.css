@@ -40,7 +40,7 @@
 }
 
 .counsel-area button:hover{
-    box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 12px rgba(255, 228, 228, 0.3);
 }
 
 
@@ -76,15 +76,6 @@
 @media (min-width: 1900px) {
     .counsel-area{
         max-width: 1200px;
-    }
-    .counsel-area h2{
-        font-size: 3rem;
-    }
-    .counsel-area p{
-        font-size: 1.5rem;
-    }
-    .counsel-area button{
-        font-size: 1.5rem;
     }
 }
 
